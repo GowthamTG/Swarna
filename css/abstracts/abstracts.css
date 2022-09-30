@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Ghakity;
-  src: url(../../assets/fonts/Ghakity.ttf);
+  src: url("../../assets/fonts/Ghakity.ttf");
 }
 
 .rotate-45 {
