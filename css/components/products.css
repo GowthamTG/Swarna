@@ -30,6 +30,7 @@
   display: flex;
   height: 20rem;
   min-width: 18rem;
+  object-fit: contain;
   border: 1px solid var(--font-backdrop);
   justify-content: center;
   align-items: center;
@@ -38,10 +39,23 @@
 }
 
 .carousel-image {
-  width: 10rem;
-  object-fit: cover;
+  width: 9rem;
+  object-fit: contain;
   z-index: 1000;
   background: transparent;
+  filter: drop-shadow(0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.08));
+  animation: background-image-rotate 100s infinite;
+}
+
+.carousel-image-box {
+  height: 18rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.small-image {
+  width: 2.2rem;
 }
 .carousel-item-text {
   /* margin-left: 2rem; */
@@ -53,6 +67,8 @@
   z-index: 0;
   /* top: 1px; */
   color: var(--font-primary);
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 .product-list {

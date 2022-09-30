@@ -84,6 +84,7 @@ window.addEventListener("load", () => {
     themeButton.innerText = "Light";
     loadJewels();
     loadJewel();
+    insertCarousel();
 });
 const loadJewels = () => {
     const insertProductLocation = document.getElementById("insert-product");
@@ -93,7 +94,7 @@ const loadJewels = () => {
         console.log(insertProductLocation);
         for (let index = 0; index < jewels.length; index++) {
             const jewel = jewels[index];
-            newInnerHTML += `<a href="./product.html" onclick="function() {setJewel(${index.toString()})}">
+            newInnerHTML += `<a href="./product.html" onclick="setJewel(${index.toString()})">
                       <div class="product">
                         <img
                           src="${jewel.image}"
@@ -218,7 +219,47 @@ const loadJewel = () => {
                                     </div>`;
     }
 };
+const insertCarousel = () => {
+    const insertProductLocation = document.getElementById("carousel-insert");
+    if (insertProductLocation) {
+        insertProductLocation.innerHTML = "";
+        let newInnerHTML = "";
+        console.log(insertProductLocation);
+        for (let index = 0; index < jewels.length; index++) {
+            const jewel = jewels[index];
+            if (jewel.image !== "./assets/jewels/LJWR287-W.png")
+                newInnerHTML += ` <div class="carousel-item">
+        <div class="carousel-image-box">
+        <img
+        class="carousel-image"
+        src="${jewel.image}"
+        alt=""
+      />
+      </div>
+
+   
+                    <div class="carousel-item-text heading-tertiary">${jewel.name}</div>
+                  </div>`;
+            else {
+                newInnerHTML += ` <div class="carousel-item">
+        <div class="carousel-image-box">
+          <img
+          class="carousel-image small-image"
+          src="${jewel.image}"
+          alt=""
+        />
+        </div>
+
+     
+        <div class="carousel-item-text heading-tertiary">${jewel.name}</div>
+      </div>`;
+            }
+        }
+        insertProductLocation.innerHTML = newInnerHTML;
+    }
+};
 const setJewel = (id) => {
+    console.log("Setting Data");
     localStorage.setItem("JEWEL", JSON.stringify(jewels[id]));
 };
 const getJewel = () => {
