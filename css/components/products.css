@@ -78,6 +78,7 @@
   column-gap: 2rem;
   text-transform: uppercase;
   align-items: center;
+  justify-content: center;
 }
 .carousel-heading {
   letter-spacing: 0.2rem;

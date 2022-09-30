@@ -90,6 +90,10 @@
   .background-title {
     font-size: 4rem !important;
   }
+
+  .products-text {
+    font-size: 8rem !important;
+  }
 }
 .landing-sub-content {
   display: flex;
