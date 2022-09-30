@@ -16,7 +16,7 @@
 }
 .background-title {
   font-size: 15rem;
-  font-family: "Ghakity", sans-serif;
+  font-family: Ghakity, sans-serif;
   color: var(--font-backdrop);
   background: transparent;
 }
