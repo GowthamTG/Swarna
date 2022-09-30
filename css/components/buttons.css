@@ -1,0 +1,38 @@
+button {
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary,
+.btn-primary::after {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Ghakity", sans-serif;
+  border: none;
+  font-size: 2rem;
+  background: transparent;
+  border-bottom: 1px solid var(--font-primary);
+  padding: 0rem;
+  transition: all ease-out 0.5s;
+  letter-spacing: 0.2rem;
+}
+
+.btn-primary:hover {
+  border-bottom: 1px solid transparent;
+  transition: all ease-in 0.5s;
+  transform: rotate(1rem);
+  cursor: pointer;
+}
+
+.btn-icon {
+  width: 0.8rem;
+  color: var(--font-primary) !important;
+  /* background-color: var(--font-primary); */
+  /* filter: invert(); */
+  fill: var(--font-primary) !important;
+}

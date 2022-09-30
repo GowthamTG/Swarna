@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <title>Welcome To DevRev</title>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <section class="nav">
+      <div class="nav-group">
+        <div class="nav-left-group">
+          <div class="nav-process">Sound</div>
+          <div class="nav-tag btn">OFF</div>
+        </div>
+        <div class="nav-left-group">
+          <div class="nav-process">Mode</div>
+          <button class="nav-tag btn" onclick="changeTheme()">Light</button>
+        </div>
+      </div>
+      <div class="nav-group">
+        <div>
+          <img
+            class="nav-heading"
+            src="./assets/Swarna.svg"
+            alt="Swarna Logo"
+          />
+        </div>
+      </div>
+      <div class="nav-group">
+        <div class="nav-sub-groups">
+          <button class="btn-primary nav-button">
+            About
+            <img
+              class="btn-icon rotate-45"
+              src="./assets/thin-up-arrow.svg"
+              alt="Swarna Logo"
+            />
+          </button>
+        </div>
+        <div class="nav-sub-groups">
+          <button class="btn-primary nav-button">
+            Jewels
+            <img
+              class="btn-icon rotate-45"
+              src="./assets/thin-up-arrow.svg"
+              alt="Swarna Logo"
+            />
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="body">
+      <div class="background">
+        <div class="background-box">
+          <div class="background-title">Diamanti</div>
+
+          <img
+            class="background-image"
+            src="https://www.mattiacielo.com/wp-content/uploads/2022/02/LJWR362D-PM-1-e1649924942945.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="types">
+        <div class="types-group">
+          <details class="custom-select">
+            <summary class="radios">
+              <input
+                type="radio"
+                name="material"
+                id="material"
+                title="MATERIAL"
+                checked
+              />
+              <input type="radio" name="material" id="item1" title="Gold" />
+              <input type="radio" name="material" id="item2" title="Silver" />
+            </summary>
+            <ul class="list">
+              <li>
+                <label for="item1">
+                  GOLD
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <label for="item2">SILVER</label>
+              </li>
+            </ul>
+          </details>
+        </div>
+        <div class="types-group">
+          <details class="custom-select">
+            <summary class="radios">
+              <input
+                type="radio"
+                name="item"
+                id="default"
+                title="DIMENSIONS"
+                checked
+              />
+              <input type="radio" name="item" id="item1" title="5 ROWS" />
+              <input type="radio" name="item" id="item2" title="6 ROWS" />
+              <input type="radio" name="item" id="item3" title="7 ROWS" />
+            </summary>
+            <ul class="list">
+              <li>
+                <label for="item1">
+                  5 ROWS
+                  <span></span>
+                </label>
+              </li>
+              <li>
+                <label for="item2">6 ROWS</label>
+              </li>
+              <li>
+                <label for="item3">7 ROWS</label>
+              </li>
+            </ul>
+          </details>
+        </div>
+      </div>
+      <div class="item-content">
+        <div class="item-content-box">
+          <div class="item-category-box">
+            <div class="item-category-text heading-secondary">Bracelets</div>
+          </div>
+          <div class="item-id-box">
+            <div class="item-id-text heading-secondary">LJWR362D-PM</div>
+          </div>
+          <div class="item-description-box">
+            <div class="item-description-text heading-tertiary">
+              Pink Gold 750/1000, White Diamonds 1.17Ct – Quality G/VS – Round
+              Brilliant Cut
+            </div>
+          </div>
+
+          <div class="item-request-info-box">
+            <button class="btn-primary item-request-info">
+              About
+              <img
+                class="btn-icon rotate-45"
+                src="./assets/thin-up-arrow.svg"
+                alt="Swarna Logo"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-group">
+        <button class="btn-footer btn-primary">
+          Stores
+          <img
+            class="btn-icon rotate-45"
+            src="./assets/thin-up-arrow.svg"
+            alt="Swarna Logo"
+          />
+        </button>
+      </div>
+      <div class="footer-group">
+        <div class="footer-address">©2022 - Cielo Venezia 1270 SpA</div>
+        <div class="footer-address">
+          VAT IT00899580245 -
+          <a
+            class="footer-address"
+            href="https://www.mattiacielo.com/privacy-policy/"
+            target="_blank"
+            rel="nofollow"
+            >Privacy Policy</a
+          >
+          -
+          <a
+            class="footer-address"
+            href="//noooagency.com"
+            target="_blank"
+            rel="nofollow"
+            >Credits</a
+          >
+        </div>
+      </div>
+      <div class="footer-group">
+        <button class="btn-footer btn-primary">Request Info</button>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/6631b3c549.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/swarna-landing.js"></script>
+    <script src="./dist/accordion.js"></script>
+  </body>
+</html>

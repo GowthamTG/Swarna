@@ -1,0 +1,30 @@
+.background {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  align-items: center;
+}
+.background-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100rem;
+  border: 2px solid var(--font-backdrop);
+}
+.background-title {
+  font-size: 5rem;
+  font-family: "Ghakity", sans-serif;
+  color: var(--font-backdrop);
+}
+
+.background-image {
+  background-color: transparent;
+  position: absolute;
+  width: 30rem;
+  filter: drop-shadow(1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.08));
+  /* transform: translate3d(0, black, 0); */
+  animation: background-image-rotate 800s infinite;
+}

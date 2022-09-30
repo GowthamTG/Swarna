@@ -1,0 +1,82 @@
+@keyframes make-text-up {
+  0% {
+    transform: translate3d(0px, 50px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes floating-image-rotate-main {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(50deg);
+  }
+  25% {
+    transform: translate3d(-4px, -8px, 0px) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(30px, -20px, 0px) rotate(20deg);
+  }
+  75% {
+    transform: translate3d(-6px, -11px, 0px) rotate(45deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(50deg);
+  }
+}
+
+@keyframes floating-image-rotate-reverse {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(-45deg);
+  }
+  25% {
+    transform: translate3d(4px, 8px, 0px) rotate(-40deg);
+  }
+  50% {
+    transform: translate3d(-30px, 20px, 0px) rotate(-15deg);
+  }
+  75% {
+    transform: translate3d(6px, 11px, 0px) rotate(-40deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(-45deg);
+  }
+}
+
+@keyframes floating-image-rotate-earing {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(4px, -8px, 0px) rotate(3deg);
+  }
+  50% {
+    transform: translate3d(-15px, 10px, 0px) rotate(3deg);
+  }
+  75% {
+    transform: translate3d(-4px, -8px, 0px) rotate(3deg);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes background-image-rotate {
+  0% {
+    transform: translate3d(0px, -10px, 0px) rotate(0deg);
+  }
+  25% {
+    transform: translate3d(0px, 10px, 0px) rotate(90deg);
+  }
+  50% {
+    transform: translate3d(0px, 0px, 0px) rotate(180deg);
+  }
+  75% {
+    transform: translate3d(0px, 10px, 0px) rotate(270deg);
+  }
+  100% {
+    transform: translate3d(0px, -10px, 0px) rotate(360deg);
+  }
+}
