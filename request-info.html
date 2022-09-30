@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <title>Welcome To DevRev</title>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <section class="nav">
+      <div class="nav-group">
+        <div class="nav-left-group">
+          <div class="nav-process">Sound</div>
+          <div class="nav-tag btn">OFF</div>
+        </div>
+        <div class="nav-left-group">
+          <div class="nav-process">Mode</div>
+          <button class="nav-tag btn" id="theme" onclick="changeTheme()">
+            Light
+          </button>
+        </div>
+      </div>
+      <div class="nav-group">
+        <div>
+          <img
+            class="nav-heading"
+            src="./assets/Swarna.svg"
+            alt="Swarna Logo"
+          />
+        </div>
+      </div>
+      <div class="nav-group">
+        <div class="nav-sub-groups">
+          <button class="btn-primary nav-button">
+            About
+            <img
+              class="btn-icon rotate-45"
+              src="./assets/thin-up-arrow.svg"
+              alt="Swarna Logo"
+            />
+          </button>
+        </div>
+        <div class="nav-sub-groups">
+          <a class="btn-primary nav-button" href="./products.html">Jewels</a>
+        </div>
+        <div class="nav-sub-groups">
+          <a class="btn-primary nav-button" href="./landing.html">Home</a>
+        </div>
+      </div>
+    </section>
+    <section class="body"></section>
+    <section class="footer">
+      <div class="footer-group">
+        <button class="btn-footer btn-primary">
+          Stores
+          <img
+            class="btn-icon rotate-45"
+            src="./assets/thin-up-arrow.svg"
+            alt="Swarna Logo"
+          />
+        </button>
+      </div>
+      <div class="footer-group">
+        <div class="footer-address">©2022 - Cielo Venezia 1270 SpA</div>
+        <div class="footer-address">
+          VAT IT00899580245 -
+          <a
+            class="footer-address"
+            href="https://www.mattiacielo.com/privacy-policy/"
+            target="_blank"
+            rel="nofollow"
+            >Privacy Policy</a
+          >
+          -
+          <a
+            class="footer-address"
+            href="//noooagency.com"
+            target="_blank"
+            rel="nofollow"
+            >Credits</a
+          >
+        </div>
+      </div>
+      <div class="footer-group">
+        <button class="btn-footer btn-primary">Request Info</button>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/6631b3c549.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./dist/swarna-landing.js"></script>
+    <script src="./dist/accordion.js"></script>
+  </body>
+</html>
