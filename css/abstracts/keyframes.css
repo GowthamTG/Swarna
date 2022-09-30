@@ -32,13 +32,13 @@
     transform: translate3d(0px, 0px, 0px) rotate(-45deg);
   }
   25% {
-    transform: translate3d(4px, 8px, 0px) rotate(-40deg);
+    transform: translate3d(4px, 20px, 0px) rotate(-30deg);
   }
   50% {
-    transform: translate3d(-30px, 20px, 0px) rotate(-15deg);
+    transform: translate3d(-30px, -50px, 0px) rotate(-45deg);
   }
   75% {
-    transform: translate3d(6px, 11px, 0px) rotate(-40deg);
+    transform: translate3d(6px, 20px, 0px) rotate(-30deg);
   }
   100% {
     transform: translate3d(0px, 0px, 0px) rotate(-45deg);

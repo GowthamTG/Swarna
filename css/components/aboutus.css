@@ -26,12 +26,14 @@
 }
 .vertical-text-box {
   transform: rotate(-90deg);
+  background: transparent;
 }
 .vertical-text {
   color: var(--font-primary);
   font-size: 7rem;
   font-weight: 100;
   letter-spacing: 0.4rem;
+  background: transparent;
 }
 
 .aboutus-text {

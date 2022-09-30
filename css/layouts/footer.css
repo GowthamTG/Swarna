@@ -13,11 +13,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .footer-address,
 .footer-address:link {
-  color: var(--font-primary);
+  color: var(--font-backdrop);
   font-size: 0.8rem;
 }
 

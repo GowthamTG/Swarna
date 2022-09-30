@@ -6,6 +6,7 @@
   align-items: center;
   column-gap: 6rem;
   max-width: 80rem;
+  align-items: center;
 }
 
 .landing-group {
@@ -34,6 +35,62 @@
   object-fit: cover;
   border: 1px solid black;
 }
+
+@media only screen and (max-width: 768px) {
+  .landing-video {
+    width: 18rem;
+    height: 18rem;
+  }
+  .landing-video-box {
+    /* width: 10rem; */
+    width: 18rem;
+    height: 18rem;
+    /* border: 2px solid rebeccapurple; */
+  }
+  .landing-group-image {
+    width: 18rem;
+  }
+
+  .landing-box {
+    justify-content: center;
+  }
+  .landing-sub-content {
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .aboutus {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .vertical-text-box {
+    display: none;
+  }
+  .floating-image {
+    display: none;
+  }
+  .nav,
+  .footer {
+    justify-content: center;
+  }
+  .footer-address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .background-image {
+    width: 14rem !important;
+  }
+  .background-box {
+    width: 18rem !important;
+    height: 18rem !important;
+  }
+  .background-title {
+    font-size: 6rem !important;
+  }
+}
 .landing-sub-content {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +107,7 @@
   align-items: center;
   flex-direction: column;
   width: 17rem;
+  /* margin: auto; */
 }
 
 .floating-image {
@@ -58,13 +116,14 @@
   position: relative;
   bottom: 5rem;
   width: 13.5rem;
+  z-index: 0;
   filter: drop-shadow(1rem 2.5rem 0.5rem rgba(0, 0, 0, 0.08));
   animation: floating-image-rotate-main 20s infinite;
 }
 
 .floating-image-reverse {
   background-color: transparent;
-
+  z-index: 0;
   position: relative;
   bottom: 5rem;
   width: 13.5rem;
