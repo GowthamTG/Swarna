@@ -81,7 +81,7 @@ const jewels = [
 ];
 window.addEventListener("load", () => {
     const themeButton = document.getElementById("theme");
-    themeButton.innerText = "Light";
+    themeButton.innerText = "Dark";
     loadJewels();
     loadJewel();
     insertCarousel();
